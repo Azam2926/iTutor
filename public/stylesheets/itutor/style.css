@@ -1,0 +1,112 @@
+body {
+    margin: 50px;
+    font-size: 24px;
+    font-family: Calibri;
+    font-weight: bold;
+    transition: filter 10s;
+}
+
+.p {
+    opacity: 0.1;
+    display: inline;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 11px 2px;
+    cursor: pointer #a8e494;
+    font-weight: bold;
+    transition: padding 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: font-size 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #3e8e41;
+}
+
+.btn:disabled {
+    background-color: grey;
+    padding: 0px 0px;
+    font-size: 10px;
+}
+
+.input {
+    color: black;
+    border: none;
+    padding: 13px 28px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 7px 2px;
+    cursor: text;
+    border: solid lightblue 2px;
+    width: 150px;
+    transition: width 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.input:focus {
+    width: 330px;
+}
+
+#inputs {
+    display: none;
+    text-align: center;
+}
+
+#result {
+    font-size: 35px;
+    color: red;
+    font-weight: bolder;
+    margin-left: 333px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+    0% {
+        color: #ffe6e6;
+    }
+    100% {
+        color: red;
+    }
+}
+
+#teresa {
+    height: 333px;
+}
+
+#image {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+#paragraphs {
+    width: 900px;
+    height: 300px;
+}
+
+#caption {
+    font-size: 18px;
+    padding: 10px 20px;
+    padding-left: 40px;
+}
+
+#wrong {
+    display: inline;
+}
+
+#footer {
+    position: fixed;
+    left: 1221px;
+    top: 600px;
+}
